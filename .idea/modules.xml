@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" filepath="$PROJECT_DIR$/SearchingAlgorithms/SearchingAlgorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/SortingAlgorithms/SortingAlgorithms.iml" filepath="$PROJECT_DIR$/SortingAlgorithms/SortingAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TreeDataStructure/TreeDataStructure.iml" filepath="$PROJECT_DIR$/TreeDataStructure/TreeDataStructure.iml" />
     </modules>
   </component>
 </project>
