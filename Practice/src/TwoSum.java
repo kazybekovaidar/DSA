@@ -1,32 +1,37 @@
-import java.util.HashSet;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class TwoSum {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
         int n = scan.nextInt();
-        int target = scan.nextInt();
-        int[] arr = new int[n];
-        HashSet<Integer> set = new HashSet<>();
-
-        Hashtable<Integer,Integer> table = new Hashtable<>();
+        int t = scan.nextInt();
+        Hashtable<Integer,Integer> ht = new Hashtable<>();
         for (int i = 0; i < n; i++) {
-            arr[i] = scan.nextInt();
-            if (arr[i]<target){
-                table.put(i,arr[i]);
+            int num = scan.nextInt();
+            if (num<=t){
+                ht.put(num,i);
             }
         }
-
-    }
-
-    public static int sum(int[] arr) {
-        int sum = 0; //
-        for (int num: arr) {
-            sum+=num;
+        ArrayList<Integer> list = new ArrayList<>();
+        for(Map.Entry<Integer, Integer> e: ht.entrySet()) {
+            list.add(e.getKey());
         }
-        return sum;
+        System.out.println(list);
+        for (int i = 0; i < list.size(); i++) {
+            int c = 0;
+            for (int k = 0; k < list.size(); k++) {
+                if (k!=i){
+                    if (list.get(i)+list.get(k)==t){
+                        System.out.println(ht.get(list.get(i)) + " " + ht.get(list.get(k)));
+                        c = 1;
+                    }
+                } else {
+                    break;
+                }
+            }
+            if(c==1){
+                break;
+            }
+        }
     }
 }
