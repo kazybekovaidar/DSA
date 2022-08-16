@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Main {
     class Node {
         Node left, right;
@@ -55,6 +57,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(4);
+        linkedList.add(12);
+        linkedList.add(5);
     }
 }

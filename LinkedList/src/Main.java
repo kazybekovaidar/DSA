@@ -17,9 +17,10 @@ public class Main {
         linkedList.head = new Node(1);
         Node second = new Node(2);
         Node third = new Node(3);
+        Node last = new Node(4);
 
         linkedList.head.next = second;
-        second.next = third;
-        System.out.println(second.data);
+        second.next = last;
+        System.out.println(second.data );
     }
 }
