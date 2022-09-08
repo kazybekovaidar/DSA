@@ -7,6 +7,7 @@ public class isAnagram {
         Scanner scan = new Scanner(System.in);
         String s = scan.next();
         String t = scan.next();
+        String k = String.valueOf(1);
         System.out.println(arrangeAlp(s) + "\n" + arrangeAlp(t));
     }
 
